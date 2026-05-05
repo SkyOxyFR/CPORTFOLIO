@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compétences techniques et humaines de Thomas Truffier-Blanc.">
+    <title>Compétences | Thomas Truffier-Blanc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="competences">
+    <div id="overlay" class="overlay"></div>
+    <aside id="side-panel" class="side-panel" aria-hidden="true">
+        <button id="close-btn" class="close-btn" aria-label="Fermer le panneau"><i class="fa-solid fa-xmark"></i></button>
+        <div class="panel-content">
+            <p id="panel-meta" class="panel-meta"></p>
+            <h2 id="panel-title">Détail</h2>
+            <p id="panel-location" class="panel-location"></p>
+            <div id="panel-body" class="panel-body"></div>
+        </div>
+    </aside>
+
+    <header class="site-header">
+        <a href="index.html" class="brand"><span class="brand-mark">TTB</span><span class="brand-text">Portfolio</span></a>
+        <nav class="desktop-nav" aria-label="Navigation principale">
+            <a href="index.html" data-nav="accueil">Accueil</a>
+            <a href="projets.html" data-nav="projets">Projets</a>
+            <a href="competences.html" data-nav="competences">Compétences</a>
+            <a href="passion.html" data-nav="passion">Passion</a>
+            <a href="contact.html" data-nav="contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <nav class="mobile-nav" aria-label="Navigation mobile">
+        <a href="index.html" data-nav="accueil">Accueil</a>
+        <a href="projets.html" data-nav="projets">Projets</a>
+        <a href="competences.html" data-nav="competences">Compétences</a>
+        <a href="passion.html" data-nav="passion">Passion</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+    </nav>
+
+    <main>
+        <section class="page-hero section-pad">
+            <div class="page-hero-copy reveal">
+                <p class="page-label">Compétences</p>
+                <h1>Mes Compétences</h1>
+                <p>Une base technique construite autour des réseaux, de la programmation, des télécommunications et d'une posture de travail sérieuse.</p>
+            </div>
+            <figure class="page-hero-media reveal">
+                <img src="https://images.unsplash.com/photo-1750711731797-25c3f2551ff8?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1600" alt="Switch réseau avec câbles Ethernet">
+            </figure>
+        </section>
+
+        <section id="skills" class="section-pad content-section">
+            <div class="skills-controls reveal" role="tablist" aria-label="Filtres de compétences">
+                <button class="btn-filter active" data-filter="tech" type="button">Techniques</button>
+                <button class="btn-filter" data-filter="human" type="button">Humaines & Langues</button>
+            </div>
+
+            <div class="skills-grid" id="tech-skills">
+                <article class="skill-card reveal detail-trigger" data-detail="skill-network" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1775519520461-6b6e068d9250?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Baies de serveurs et câblage">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>Réseaux</h3>
+                    <p>Configuration de points d'accès, adressage IP, VLAN, services réseau.</p>
+                </article>
+                <article class="skill-card reveal detail-trigger" data-detail="skill-telecom" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=70&w=1200" alt="Carte électronique et composants">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <h3>Télécoms</h3>
+                    <p>Oscilloscope, générateur basse fréquence, mesures et signaux.</p>
+                </article>
+                <article class="skill-card reveal detail-trigger" data-detail="skill-code" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1763568258458-ef825ca23fdd?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Ordinateur portable affichant du code">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Programmation</h3>
+                    <p>Python, HTML, CSS, JavaScript et automatisation simple.</p>
+                </article>
+                <article class="skill-card reveal detail-trigger" data-detail="skill-telephony" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=70&w=1200" alt="Poste de travail avec interface web">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <h3>Téléphonie</h3>
+                    <p>VoIP, SIP, Xivo/Asterisk, terminaux et services avancés.</p>
+                </article>
+            </div>
+
+            <div class="skills-grid hidden" id="human-skills">
+                <article class="skill-card reveal detail-trigger" data-detail="skill-qualities" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=70&w=1200" alt="Réunion de travail autour d'une table">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h3>Qualités</h3>
+                    <p>Adaptabilité, organisation, patience et intégration rapide.</p>
+                </article>
+                <article class="skill-card reveal">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=70&w=1200" alt="Groupe d'étudiants travaillant ensemble">
+                    <i class="fa-solid fa-language"></i>
+                    <h3>Anglais</h3>
+                    <p>Niveau B2, renforcé par les voyages et les usages techniques.</p>
+                </article>
+                <article class="skill-card reveal">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=70&w=1200" alt="Personnes discutant dans un cadre professionnel">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <h3>Espagnol</h3>
+                    <p>Niveau scolaire, base utile pour comprendre et échanger.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Thomas Truffier-Blanc</p>
+        <a href="contact.html">Contact</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

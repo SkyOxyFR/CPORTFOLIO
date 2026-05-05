@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Passions de Thomas Truffier-Blanc : musique, Océanie et États-Unis.">
+    <title>Passion | Thomas Truffier-Blanc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="passion">
+    <div id="overlay" class="overlay"></div>
+    <aside id="side-panel" class="side-panel" aria-hidden="true">
+        <button id="close-btn" class="close-btn" aria-label="Fermer le panneau"><i class="fa-solid fa-xmark"></i></button>
+        <div class="panel-content">
+            <p id="panel-meta" class="panel-meta"></p>
+            <h2 id="panel-title">Détail</h2>
+            <p id="panel-location" class="panel-location"></p>
+            <div id="panel-body" class="panel-body"></div>
+        </div>
+    </aside>
+
+    <header class="site-header">
+        <a href="index.html" class="brand"><span class="brand-mark">TTB</span><span class="brand-text">Portfolio</span></a>
+        <nav class="desktop-nav" aria-label="Navigation principale">
+            <a href="index.html" data-nav="accueil">Accueil</a>
+            <a href="projets.html" data-nav="projets">Projets</a>
+            <a href="competences.html" data-nav="competences">Compétences</a>
+            <a href="passion.html" data-nav="passion">Passion</a>
+            <a href="contact.html" data-nav="contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <nav class="mobile-nav" aria-label="Navigation mobile">
+        <a href="index.html" data-nav="accueil">Accueil</a>
+        <a href="projets.html" data-nav="projets">Projets</a>
+        <a href="competences.html" data-nav="competences">Compétences</a>
+        <a href="passion.html" data-nav="passion">Passion</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+    </nav>
+
+    <main>
+        <section class="page-hero section-pad">
+            <div class="page-hero-copy reveal">
+                <p class="page-label">Culture personnelle</p>
+                <h1>Passion</h1>
+                <p>Une page plus personnelle autour de la musique et des voyages, avec une approche visuelle riche mais toujours sobre.</p>
+            </div>
+            <figure class="page-hero-media reveal">
+                <img src="https://images.unsplash.com/photo-1675116268414-cece14d1d8fc?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1600" alt="Concert avec lumières de scène">
+            </figure>
+        </section>
+
+        <section class="section-pad passion-block">
+            <div class="section-heading reveal">
+                <p>A. Musique</p>
+                <h2>MUSIQUE</h2>
+            </div>
+            <div class="passion-intro reveal">
+                <p>J'écoute beaucoup de rock alternatif, de psyché et d'électro. Mes références vont de Tame Impala à Radiohead, de Nirvana à l'énergie électro de <strong>L'amour toujours</strong>.</p>
+                <div class="music-tags" aria-label="Goûts musicaux">
+                    <span>Tame Impala</span>
+                    <span>Radiohead</span>
+                    <span>Nirvana</span>
+                    <span>L'amour toujours</span>
+                </div>
+            </div>
+            <div class="gallery-grid music-gallery">
+                <article class="image-tile large reveal">
+                    <img src="https://images.unsplash.com/photo-1675116268414-cece14d1d8fc?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1400" alt="Ambiance de concert avec faisceaux lumineux" data-lightbox>
+                    <div><h3>Concerts</h3><p>La puissance d'une scène, des lumières et du collectif.</p></div>
+                </article>
+                <article class="image-tile reveal">
+                    <img src="https://images.unsplash.com/photo-1747003869273-9fc7ad373137?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Guitariste sur scène" data-lightbox>
+                    <div><h3>Rock alternatif</h3><p>Radiohead, Nirvana, guitare et intensité.</p></div>
+                </article>
+                <article class="image-tile reveal">
+                    <img src="https://images.unsplash.com/photo-1520354127549-fcecfe79d058?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Vinyle sur platine" data-lightbox>
+                    <div><h3>Psyché</h3><p>Textures sonores, albums qui s'écoutent en entier.</p></div>
+                </article>
+                <article class="image-tile reveal">
+                    <img src="https://images.unsplash.com/photo-1557787824-93666b9f6093?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="DJ et console de mixage" data-lightbox>
+                    <div><h3>Électro</h3><p>L'énergie directe de L'amour toujours.</p></div>
+                </article>
+                <article class="image-tile reveal">
+                    <img src="https://images.unsplash.com/photo-1771851975026-3137d37eae93?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Synthétiseur modulaire et boutons audio" data-lightbox>
+                    <div><h3>Production</h3><p>Synthés, couches et ambiance électronique.</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-pad passion-block alt-band">
+            <div class="section-heading reveal">
+                <p>B. Voyages - Océanie</p>
+                <h2>VOYAGES - OCÉANIE</h2>
+            </div>
+            <div class="destination-grid">
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Sydney et son opéra" data-lightbox>
+                    <h3>Sydney</h3>
+                    <p>Ville, baie, architecture et énergie côtière.</p>
+                </article>
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1702538861107-53d5a56be28e?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Blue Mountains près de Sydney" data-lightbox>
+                    <h3>Paysages autour de Sydney</h3>
+                    <p>Reliefs, falaises et nature autour de la ville.</p>
+                </article>
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1745550663491-6cec967ce6e9?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Skyline d'Auckland vue depuis l'eau" data-lightbox>
+                    <h3>Auckland</h3>
+                    <p>Ville portuaire, skyline et horizon pacifique.</p>
+                </article>
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1736644581212-6731fae8faa0?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Lac et montagnes en Nouvelle-Zélande" data-lightbox>
+                    <h3>Île du Sud</h3>
+                    <p>Montagnes, lacs et paysages spectaculaires.</p>
+                </article>
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Plage en Nouvelle-Calédonie" data-lightbox>
+                    <h3>New Caledonia</h3>
+                    <p>Lagon, plages et souvenirs d'outre-mer.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-pad passion-block">
+            <div class="section-heading reveal">
+                <p>C. Voyages - États-Unis</p>
+                <h2>VOYAGES - ÉTATS-UNIS</h2>
+            </div>
+            <div class="destination-grid usa-grid">
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1556538643-1642b85248fd?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Skyline de New York City" data-lightbox>
+                    <h3>New York City</h3>
+                    <p>Verticalité, rythme urbain et monuments.</p>
+                </article>
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1514914399892-6645e3fcb67b?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Grand Canyon vu depuis les hauteurs" data-lightbox>
+                    <h3>Grand Canyon</h3>
+                    <p>Relief monumental et immensité minérale.</p>
+                </article>
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1668383184143-3896b060259a?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Route dans le désert du Nevada" data-lightbox>
+                    <h3>Nevada</h3>
+                    <p>Routes, désert, lumière sèche et horizon.</p>
+                </article>
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1444076784383-69ff7bae1b0a?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Canyon en Arizona" data-lightbox>
+                    <h3>Arizona</h3>
+                    <p>Canyons, roches rouges et paysages sculptés.</p>
+                </article>
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1668129829354-8427b343bb5a?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Los Angeles et palmiers au coucher du soleil" data-lightbox>
+                    <h3>Los Angeles</h3>
+                    <p>Palmiers, skyline et ambiance côte Ouest.</p>
+                </article>
+                <article class="destination-card reveal">
+                    <img src="https://images.unsplash.com/photo-1499881473615-cce30babfcad?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Golden Gate Bridge à San Francisco" data-lightbox>
+                    <h3>San Francisco</h3>
+                    <p>Ponts, rues, baie et architecture marquante.</p>
+                </article>
+                <article class="destination-card reveal wide">
+                    <img src="https://images.unsplash.com/photo-1727880517924-2ef0c2025e0b?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1600" alt="Route côtière de Californie" data-lightbox>
+                    <h3>California</h3>
+                    <p>Routes côtières, océan Pacifique et grands espaces entre Los Angeles et San Francisco.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Thomas Truffier-Blanc</p>
+        <a href="contact.html">Contact</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

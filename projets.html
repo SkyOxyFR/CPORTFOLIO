@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets web, réseau et cybersécurité de Thomas Truffier-Blanc.">
+    <title>Projets | Thomas Truffier-Blanc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projets">
+    <div id="overlay" class="overlay"></div>
+    <aside id="side-panel" class="side-panel" aria-hidden="true">
+        <button id="close-btn" class="close-btn" aria-label="Fermer le panneau"><i class="fa-solid fa-xmark"></i></button>
+        <div class="panel-content">
+            <p id="panel-meta" class="panel-meta"></p>
+            <h2 id="panel-title">Détail</h2>
+            <p id="panel-location" class="panel-location"></p>
+            <div id="panel-body" class="panel-body"></div>
+        </div>
+    </aside>
+
+    <header class="site-header">
+        <a href="index.html" class="brand"><span class="brand-mark">TTB</span><span class="brand-text">Portfolio</span></a>
+        <nav class="desktop-nav" aria-label="Navigation principale">
+            <a href="index.html" data-nav="accueil">Accueil</a>
+            <a href="projets.html" data-nav="projets">Projets</a>
+            <a href="competences.html" data-nav="competences">Compétences</a>
+            <a href="passion.html" data-nav="passion">Passion</a>
+            <a href="contact.html" data-nav="contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <nav class="mobile-nav" aria-label="Navigation mobile">
+        <a href="index.html" data-nav="accueil">Accueil</a>
+        <a href="projets.html" data-nav="projets">Projets</a>
+        <a href="competences.html" data-nav="competences">Compétences</a>
+        <a href="passion.html" data-nav="passion">Passion</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+    </nav>
+
+    <main>
+        <section class="page-hero section-pad">
+            <div class="page-hero-copy reveal">
+                <p class="page-label">Réalisations</p>
+                <h1>Mes Projets</h1>
+                <p>Des projets personnels et de formation autour du web, de l'administration réseau, de la cybersécurité et des outils pratiques.</p>
+            </div>
+            <figure class="page-hero-media reveal">
+                <img src="https://images.unsplash.com/photo-1763568258458-ef825ca23fdd?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1600" alt="Interface de développement et analyse de données">
+            </figure>
+        </section>
+
+        <section id="projects" class="section-pad content-section">
+            <div class="project-grid">
+                <article class="project-card reveal detail-trigger" data-detail="project-hackagou" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=70&w=1200" alt="Cybersécurité et circuit numérique">
+                    <div class="project-info">
+                        <span>Hackathon & CTF</span>
+                        <h3>HackAgou.NC</h3>
+                        <p>Participation à des challenges de cybersécurité en équipe.</p>
+                    </div>
+                </article>
+                <article class="project-card reveal detail-trigger" data-detail="project-mapnc" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Paysage côtier en Nouvelle-Calédonie">
+                    <div class="project-info">
+                        <span>Site web & database</span>
+                        <h3>Map.NC</h3>
+                        <p>Carte interactive pour partager des informations locales en période de crise.</p>
+                    </div>
+                </article>
+                <article class="project-card reveal detail-trigger" data-detail="project-portfolio" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1763568258458-ef825ca23fdd?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Développement frontend sur ordinateur">
+                    <div class="project-info">
+                        <span>Développement front-end</span>
+                        <h3>Portfolio V1</h3>
+                        <p>Vitrine personnelle responsive en HTML, CSS et JavaScript.</p>
+                    </div>
+                </article>
+                <article class="project-card reveal detail-trigger" data-detail="project-nettoolbox" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1750711731797-25c3f2551ff8?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=70&w=1200" alt="Switch réseau et câbles Ethernet">
+                    <div class="project-info">
+                        <span>Application réseau</span>
+                        <h3>Net ToolBox</h3>
+                        <p>Outils mobiles pour le diagnostic et l'administration réseau.</p>
+                    </div>
+                </article>
+                <article class="project-card reveal detail-trigger" data-detail="project-sae23" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=70&w=1200" alt="Code et cybersécurité sur écran">
+                    <div class="project-info">
+                        <span>Audit de sécurité</span>
+                        <h3>SAE23</h3>
+                        <p>Analyse de vulnérabilités web et rapport d'audit structuré.</p>
+                    </div>
+                </article>
+                <article class="project-card reveal detail-trigger" data-detail="project-sae22" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=70&w=1200" alt="Écran de code et logique informatique">
+                    <div class="project-info">
+                        <span>Math Lab</span>
+                        <h3>SAE22</h3>
+                        <p>Projet en cours autour des mathématiques appliquées.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Thomas Truffier-Blanc</p>
+        <a href="contact.html">Contact</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
